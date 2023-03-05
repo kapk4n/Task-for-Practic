@@ -14,7 +14,7 @@ class Test
 
     current_date = @start_date
     a = checking(current_date, k)
-    puts a[1] == @periods_chain.length
+    a[1] == @periods_chain.length
   end
 
   def add(new_period_type)
@@ -33,7 +33,7 @@ class Test
       @periods_chain = @periods_chain.push("#{extra.year}M#{extra.month}D#{extra.mday}")
     end
 
-    [@periods_chain.to_s, @periods_chain]
+    [@periods_chain, @periods_chain]
   end
 
   private
